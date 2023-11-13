@@ -1,0 +1,104 @@
+.navbar {
+	background-color: #7B7B7B !important;
+}
+
+.nav-link {
+	color: white !important;
+}
+
+.nav-link:hover {
+	color: #8894FF;
+}
+
+.navbar-brand{
+		font-family: Montserrat;
+		font-weight: 1000;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; 
+}
+
+
+*{
+	margin:0;
+}
+body {
+	font-family: Tahoma, Arial;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+header {
+	background-color: orange;
+	padding: 20px;
+}
+
+h1, h2{
+	font-family: Georgia, serif;
+	text-align: center;
+}
+
+h3 {
+	text-align:center;
+}
+
+nav{
+	background-color: blue;
+	color: #fad7a0;
+	padding: 10px;
+}
+
+footer{
+	background-color: red;
+	font-size: 16px;
+	font-style: italic;
+	color: white;
+	margin-top: auto;
+	padding: 15px;
+}
+
+
+
+table {
+	font-family: Arial, sans-serif;
+	border-collapse: collapse;
+	width: 50%;
+	margin:0 auto;
+}
+
+th, td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.same-size {
+width: 200px;
+height: 150px;
+}
+
+.em-video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+}
+
+video{
+	max-width: 100%;
+	max-height: 100%;
+	
+}

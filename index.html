@@ -1,133 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-		
-		<link href="style.css" rel="stylesheet">
-		
-		<title>Bootstrap page ex</title>
-		
-		
-		<!-- this are some imported fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Patel Portfolio</title>
+    <!-- external links of header -->
 
-		
-	</head>
-	
-	<body>
-			<!-- making this comment for a while --<header>
-			<div class="container">
-				<div class="row">
-					<div class="col">
-					<h1> Harsh Patel</h1>
-					</div>
-				</div>
-			</div>	
-			
-				
-		</header>
-		<!-- for a while comment ends here-->
-		
-		
-		<!-- Navigation bar --------->
-			<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Harsh Patel</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 barfont">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Projects
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Project 1</a></li>
-            <li><a class="dropdown-item" href="#">Project 2</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Project 3</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">contact Me</a>
-        </li>
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-<!-- Navigation bar ends here ---------------------->
+    <link rel="stylesheet" href="style.css">
 
-
-<!-- This is the hero as well, the first picture after nav bar -->
-
-
-	<div id="heroHome" class="container-fluid d-flex justify-content-center">
-    <div id="heroText" class="col-lg-6">
-        <div>
-            <img src="hero.jpg" alt="Image Alt Text" class="img-fluid">
-        </div>
-        <div>
-            <h1>Heyya, welcome to my Website 👋</h1>
-        </div>
-        <div>
-            <p class="lead"> This portfolio website contains the education, projects and experience related to my skills.
-            </p>
-        </div>
-    </div>
-</div>
-
-
-
-
-<!-- the hero ends here --> 
-
-<main>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
-    <div class="container">
-        
-        <br>
-        <h2>About me</h2>
-        <br>
 
-        <table>
-            <caption><b>My Education</b></caption>
+    <!-- this are some imported fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<header class="fixed-top">
+    <h1>Harsh Patel Portfolio</h1>
+    <nav class="custom-nav">
+        <!-- bootstrap links on navbar -->
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <div id="slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- this is carousel images, slider-->
+            <div class="carousel-item active">
+                <img src="image1.png" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="image2.png" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="image3.png" class="d-block w-100" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p class="about-text">
+        Welcome to my world of coding and creativity! I'm Harsh Patel, a passionate developer on a mission to turn lines of code into meaningful solutions.
+        With a love for problem-solving and a keen eye for design, I embark on every project with enthusiasm, striving for both functionality and aesthetic appeal.
+        My journey in the tech realm has been filled with exciting challenges and continuous learning, making each project a unique adventure.
+        Let's build something amazing together! <a href="#contact">contact Me here</a>
+    </p>
+
+    <br>
+
+    <table class="table project-table">
+        <h3>My Education</h3>
+        <tr>
+            <th>Icon</th>
+            <th>School Attended</th>
+            <th>Degree Awarded</th>
+        </tr>
+            
             <tr>
-                <th>Icon</th>
-                <th>School Attended</th>
-                <th>Degree Awarded</th>
-            </tr>
-				
-				<tr>
-				<td><img src="img1.png" class="same-size"></td>
-				<td>Nalanda University</td>
-				<td>High School</td>
-			</tr>
-			<tr>
-				<td><img src="img2.png" class="same-size"></td>
-				<td>Taylor Business Institute</td>
-				<td>Associates in Electronics and Electrical Engineering</td>
-			</tr>
-			<tr>
-				<td><img src="img3.png" class="same-size"></td>
-				<td>National Louis University</td>
-				<td>Bachelor's in Computer Science and Information Systems</td>
-			</tr>
-			
+            <td><img src="tbl1.png" class="same-size"></td>
+            <td>Nalanda University</td>
+            <td>High School</td>
+        </tr>
+        <tr>
+            <td><img src="tbl2.png" class="same-size"></td>
+            <td>Taylor Business Institute</td>
+            <td>Associates in Electronics and Electrical Engineering</td>
+        </tr>
+        <tr>
+            <td><img src="tbl3.png" class="same-size"></td>
+            <td>National Louis University</td>
+            <td>Bachelor's in Computer Science and Information Systems</td>
+        </tr>
         </table>
 
-        <br> <br> <br>
 
         <h2>More information about my college</h2>
         <br>
@@ -137,34 +96,96 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rN2P2pUkjQQ?si=06aH4Oc8xXxfIOM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
-        <h3> Life of a Programmer</h3>
-
-        <br>
+        <h2> Life of a programmer</h2>
+        
         <div class="em-video">
             <video controls>
                 <source src="prog.mp4" type="video/mp4">
             </video>
         </div>
     </div>
-</main>
 
 
-		
-		
-		<footer class="footer mt-auto py-3 fixed-bottom bg-dark navbar-dark text-light">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						Copyright &copy; 2023. All Rights Reserved.
-					</div>
-				</div>
-			</div>
-		
-		</footer>
-		
-		
-	
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-	</body>
-	
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://docs.google.com/presentation/d/e/2PACX-1vRGD3QCuVWAc9rJMe8pzIHEwteBWtcqwFnKDzi3BvJraN3PHZ-LXp5i84E55UTSjM1RiNtTZ0IpM5Rk/pub?start=true&loop=true&delayms=3000">
+                    <img src="img1.png" alt="Project 1" class="project-image">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://halfmechengineer.blogspot.com/">
+                    <img src="img2.png" alt="Project 2" class="project-image">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://communitystory.online/">
+                    <img src="img3.png" alt="Project 3" class="project-image">
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        
+        <form>
+			<div class="form-group">
+			<label for="exampleFormControlTextarea1">Full Name</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Harsh Patel"></textarea>
+		  </div>
+		  
+		  <div class="form-group">
+			<label for="exampleFormControlInput1">Email address</label>
+			<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+		  </div>
+		  <div class="form-group">
+			<label for="exampleFormControlSelect1">Subscribe to random Newsletter...</label>
+			<select class="form-control" id="exampleFormControlSelect1">
+			  <option>Yes please!!!</option>
+			  <option>Nope - don't you dare</option>
+			</select>
+		  </div>
+		  
+		  <div class="form-group">
+			<label for="exampleFormControlTextarea1">What can I help you with?</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		  </div>
+		  <br>
+		  
+		  <div class="form-group">
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		  </div>
+		  
+		  
+		</form>
+
+
+
+</section>
+
+<footer>
+    <p>&copy; 2023 Harsh Patel. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://github.com/hrspatel" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/hrspatel" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+			
+			<script src="script.js"></script>
+</script>
+
+</body>
 </html>

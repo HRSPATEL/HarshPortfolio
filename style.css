@@ -1,71 +1,56 @@
-.navbar {
-	background-color: #7B7B7B !important;
-}
 
-.nav-link {
-	color: white !important;
-}
-
-.nav-link:hover {
-	color: #8894FF;
-}
-
-.navbar-brand{
-		font-family: Montserrat;
-		font-weight: 1000;
-}
-
-.navbar-nav .nav-link {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700; 
-}
-
-
-*{
-	margin:0;
-}
 body {
-	font-family: Tahoma, Arial;
-	font-size: 20px;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	padding: 20px;
+	font-family: 'Tahoma', Arial;
 }
 
 header {
-	background-color: orange;
-	padding: 20px;
-}
-
-h1, h2{
-	font-family: Georgia, serif;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 0;
 	text-align: center;
 }
 
-h3 {
-	text-align:center;
+nav {
+	display: flex; 
+	justify-content: space-around;
+	font-family: Montserrat;
+}
+section {
+	padding: 60px 20px;
+	text-align: center;
 }
 
-nav{
-	background-color: blue;
-	color: #fad7a0;
+#slider {
+	margin-top: 20px;
+}
+
+.project {
+	margin: 10px;
 	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
 
-footer{
-	background-color: red;
-	font-size: 16px;
-	font-style: italic;
-	color: white;
-	margin-top: auto;
-	padding: 15px;
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
 }
 
+.custom-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1, h2, h3, h4{
+	font-family: Montserrat, serif;
+	text-align: center;
+}
 
 
 table {
-	font-family: Arial, sans-serif;
+	font-family: Tahoma, sans-serif;
 	border-collapse: collapse;
 	width: 50%;
 	margin:0 auto;
@@ -85,16 +70,12 @@ tr:nth-child(even) {
 	background-color: #f2f2f2;
 }
 
-.same-size {
-width: 200px;
-height: 150px;
-}
-
 .em-video {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 50vh;
+	margin-top: 20px;
 }
 
 video{
@@ -102,3 +83,116 @@ video{
 	max-height: 100%;
 	
 }
+
+.project-table img {
+	width: 100px;
+	height: 100px; 
+	object-fit: cover; 
+	border-radius: 5px; 
+}
+
+
+/* all this comment now December 1, 2023
+
+
+
+
+body {
+	font-family: Tahoma, Arial;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.same-size {
+width: 200px;
+height: 150px;
+}
+
+
+
+
+main {
+	margin-top: 60px;
+	padding: 20px;
+}
+
+
+// this is for form
+
+#contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+	background-color: #f2f2f2; 
+	padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+	text-align: center;
+    padding: 40px 0;
+}
+
+
+// --------------------------------------- this is for slider
+ 
+ */
+ 
+ 
+ 

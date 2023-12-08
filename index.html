@@ -24,6 +24,13 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 
+	<!-- this is for submit button warning -->
+	<script>
+        function showWarning() {
+            alert("The submit button doesn't work, LOL 😆");
+        }
+    </script>
+
 </head>
 <body>
 
@@ -164,9 +171,9 @@
 		  <br>
 		  
 		  <div class="form-group">
-		  <button type="submit" class="btn btn-primary">Submit</button>
+		  <button type="submit" class="btn btn-primary" value="Submit" onclick="showWarning()">Submit</button>
 		  </div>
-		  
+
 		  
 		</form>
 
